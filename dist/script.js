@@ -14,7 +14,7 @@ console.log(isStrongPassword("qwerty123"));
 console.log(isStrongPassword("Qwerty123"));     
 
 function handlePasswordCheck(e) {
-  e.preventDefault(); // do not reload the page
+  e.preventDefault(); 
   const pwd = document.getElementById("password")?.value || "";
   if (isStrongPassword(pwd)) {
     alert("Password is strong");
